@@ -1,8 +1,12 @@
+# https://github.com/nickdevito22/lab10-ND-CZ
+# Partner 1: Nicholas Devito
+# Partner 2: Cynthia Zhang
+
 import math
 
 def square_root(a):
     if a < 0:
-        raise ValueError("Cannot take square root of a negative number.")
+        raise ValueError("Cannot take square root of negative number.")
     return math.sqrt(a)
 
 def hypotenuse(a, b):
