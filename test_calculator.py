@@ -17,7 +17,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
-            divide(0, 10)
+            div(0, 10)
 
     def test_logarithm(self):
         self.assertAlmostEqual(logarithm(10, 100), 2.0)
@@ -28,10 +28,10 @@ class TestCalculator(unittest.TestCase):
 
     # Partner 1
     def test_multiply(self):
-        self.assertEqual(multiply(3, 7), 21)
+        self.assertEqual(mul(3, 7), 21)
 
     def test_divide(self):
-        self.assertEqual(divide(2, 10), 5)
+        self.assertEqual(div(2, 10), 5)
 
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
